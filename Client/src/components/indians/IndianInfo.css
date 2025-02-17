@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #ffcc00; /* Yellow */
+    --secondary-color: #ff5733; /* Orange */
+    --background-color: ; /* Softer Pink */
+    --text-color: #333;
+    --card-bg-1: #d0ebff; /* Light Sky Blue */
+    --card-bg-2: #a5d8ff; /* Soft Baby Blue */
+    --card-bg-3: #74c0fc; /* Bright Ocean Blue */
+    --card-bg-4: #4dabf7; /* Deep Cerulean Blue */
+    --bg-start: #1e3c72; /* Dark Blue */
+    --bg-end: #2a5298;   /* Medium Blue */
+
+}
+  
+.indiancontainer {
+    /* background-color: #1a1a1a; */
+    /* color: #fff; */
+    background-color: #333;
+    height: 100vh;
+    width: 100vw;
+
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  /* App Container */
+  .app-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+  }
+  
+  /* Header Styles */
+  .headerindians {
+    margin-bottom: 0rem;
+    padding: 15px;
+    background-color: #272626;
+    border-radius: 50px;
+
+  }
+  
+  .headerindians h1 {
+    font-size: 1.7rem;
+    color: #ffcc00;
+  }
+  
+  .header p {
+    /* font-size: 1.2rem;
+    color: #aaa; */
+  }
+  
+  /* Grid Layout */
+  .mathematicians-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    gap: 2rem;
+    justify-items: center;
+    padding: 2rem;
+    width: 100%; /* Ensure grid takes full width */
+    max-width: 1200px; /* Center the grid and prevent it from becoming too wide */
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+  
+
+  
+  /* Mathematician Card */
+  .mathematician-card {
+    background-color: #262323;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .mathematician-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .mathematician-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 3px solid #ffcc00;
+  }
+  
+  .mathematician-card h2 {
+    font-size: 1.6rem;
+    color: #ffcc00;
+    margin-bottom: 0.8rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+  }
+  @media (max-width: 1024px) {
+    .mathematicians-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium-sized screens (tablets) */
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mathematicians-grid {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem; /* Adjust font size of the title for small screens */
+    }
+  
+    .mathematician-card {
+      width: 100%; /* Allow card to take full width on mobile */
+      padding: 1rem; /* Less padding on mobile */
+      box-sizing: border-box; /* Ensure cards fit within the container */
+    }
+  
+    .mathematician-card h2 {
+      font-size: 1.4rem; /* Adjust card title font size */
+    }
+  
+    .mathematician-card p,
+    .mathematician-card h3,
+    .mathematician-card ul li {
+      font-size: 0.9rem; /* Adjust font sizes for better readability */
+    }
+  
+    .description {
+      font-size: 0.9rem; /* Smaller description font size for mobile */
+    }
+    .app-container {
+      width: 100%;
+      padding: 20px;
+    }
+  }

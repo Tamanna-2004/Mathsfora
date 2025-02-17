@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #ffcc00; /* Yellow */
+  --secondary-color: #ff5733; /* Orange */
+  --background-color: ; /* Softer Pink */
+  --text-color: #333;
+  --card-bg-1: #d0ebff; /* Light Sky Blue */
+  --card-bg-2: #a5d8ff; /* Soft Baby Blue */
+  --card-bg-3: #74c0fc; /* Bright Ocean Blue */
+  --card-bg-4: #4dabf7; /* Deep Cerulean Blue */
+  --bg-start: #1e3c72; /* Dark Blue */
+  --bg-end: #2a5298;   /* Medium Blue */
+
+}
+
+.comment-container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #292727;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+  margin-top: 10px;
+}
+.heading{
+  color:  #1e3c72;
+}
+.comment-box, .reply-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.comment-box input, .reply-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.comment-box button, .reply-box button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comment-box button:hover, .reply-box button:hover {
+  background-color: #0056b3;
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-left: 3px solid #007bff;
+}
+
+.replies {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.reply {
+  background-color: #e9e9e9;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-left: 3px solid #28a745;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reply p{
+  line-height: 1.3rem;
+}
+.delete{
+  color: rgb(66, 64, 64);
+}
+.send{
+  color: #1e3c72;
+}
+.single-comment{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  align-items: center;
+  gap: 6px;
+}
+.single-comment p{
+  line-height: 1.3rem;
+}
+strong{
+  color: rgb(11, 11, 57);
+}
+
+@media (max-width: 768px) {
+  .comment-container{
+    width: 95%;
+  }
+  .reply{
+    padding: 5px;
+    margin-bottom: 3px;  
+  }
+  .comment-box{
+    font-size: 12px;
+  }
+  .reply-btn{
+    width: 30%;
+  }
+  .delete{
+    font-size: 0.5rem;
+  }
+}

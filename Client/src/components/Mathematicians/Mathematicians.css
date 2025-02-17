@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #ffcc00; /* Yellow */
+    --secondary-color: #ff5733; /* Orange */
+    --background-color: ; /* Softer Pink */
+    --text-color: #333;
+    --card-bg-1: #d0ebff; /* Light Sky Blue */
+    --card-bg-2: #a5d8ff; /* Soft Baby Blue */
+    --card-bg-3: #74c0fc; /* Bright Ocean Blue */
+    --card-bg-4: #4dabf7; /* Deep Cerulean Blue */
+    --card-bg-5: #495057; /* Dark Grey */
+    --card-bg-6: #343a40; /* Charcoal Black */
+    --card-bg-7: #212529; /* Deep Black */
+
+    --bg-start: #1e3c72; /* Dark Blue */
+    --bg-end: #2a5298;   /* Medium Blue */
+
+}
+
+.mathematicians-container {
+    text-align: center;
+    padding: 30px;
+    background: #333;
+}
+
+h2 {
+    color: white;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.math-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Alternating Background Colors */
+.math-card:nth-child(1) { background-color: var(--card-bg-7); }
+.math-card:nth-child(2) { background-color: var(--card-bg-7); }
+.math-card:nth-child(3) { background-color: var(--card-bg-7); }
+.math-card:nth-child(4) { background-color: var(--card-bg-7); }
+.math-card:nth-child(5) { background-color: var(--card-bg-6); }
+.math-card:nth-child(6) { background-color: var(--card-bg-6); }
+.math-card:nth-child(7) { background-color: var(--card-bg-6); }
+.math-card:nth-child(8) { background-color: var(--card-bg-6); }
+.math-card:nth-child(9) { background-color: var(--card-bg-5); }
+.math-card:nth-child(10) { background-color: var(--card-bg-5); }
+.math-card:nth-child(11) { background-color: var(--card-bg-5); }
+.math-card:nth-child(12) { background-color: var(--card-bg-5); }
+.math-card:nth-child(13) { background-color: var(--card-bg-5); }
+
+.math-card {
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Playful Glow on Hover */
+.math-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 87, 51, 0.3);
+}
+
+.math-card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+
+    /* 3D Shadow Effect */
+    box-shadow: 5px 5px 15px rgba(166, 165, 165, 0.3), 
+
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.search-bar:focus {
+    border-color: #9fa2a5;
+    box-shadow: 0px 0px 5px rgba(183, 184, 185, 0.5);
+}
+
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    margin-top: 20px;
+}
+
+.heading{
+    color: rgb(185, 187, 193);
+}
+
+h3 {
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.quote {
+    font-style: italic;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 4px solid var(--secondary-color);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}

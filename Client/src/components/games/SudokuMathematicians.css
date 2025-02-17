@@ -1,0 +1,63 @@
+.sudoku-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+  }
+  
+  h2 {
+    color: #ff5733;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .sudoku-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .sudoku-row {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .sudoku-cell {
+    width: 90px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #ff5733;
+    border-radius: 8px;
+    background-color: #fff;
+    outline: none;
+    padding: 10px;
+  }
+  
+  .sudoku-cell::placeholder {
+    color: #bbb;
+  }
+  
+  .check-btn {
+    background-color: #bbb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .heading{
+    color: #e8e1e1;
+  }
+  
+  .check-btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  .result-message {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  

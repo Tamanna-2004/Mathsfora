@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+.gameCont{
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  background-color: #333;
+}
+
+/* 🌟 Scoreboard - Floating with Glass Effect */
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(232, 153, 141, 0.8);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 14px 22px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20px;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.scoreboard:hover {
+  transform: scale(1.05);
+}
+
+.score-emoji {
+  font-size: 26px;
+  margin-left: 12px;
+}
+
+/* 🎮 Game Container */
+.game-container {
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(18px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 80px;
+  transition: all 0.3s ease-in-out;
+  margin: 3px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #8b5e83;
+  font-weight: bold;
+}
+
+.question {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* 📌 Formula Style */
+.formula {
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+/* 📝 Input Field */
+input {
+  width: 85%;
+  padding: 14px;
+  font-size: 18px;
+  border: 2px solid #ff758c;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #ff7eb3;
+  box-shadow: 0 0 10px rgba(255, 126, 179, 0.5);
+}
+
+/* 🎀 Beautiful Buttons */
+.submitButton {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  margin-top: 12px;
+  box-shadow: 0px 4px 10px rgba(255, 126, 179, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #d17878, #e8998d);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(255, 126, 179, 0.5);
+}
+
+/* 🎯 Feedback Text */
+.feedback {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.feedback.correct {
+  color: #008000;
+}
+
+.feedback.incorrect {
+  color: #d90429;
+}

@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #ffcc00; /* Yellow */
+  --secondary-color: #ff5733; /* Orange */
+  --background-color: ; /* Softer Pink */
+  --text-color: #333;
+  --card-bg-1: #d0ebff; /* Light Sky Blue */
+  --card-bg-2: #a5d8ff; /* Soft Baby Blue */
+  --card-bg-3: #74c0fc; /* Bright Ocean Blue */
+  --card-bg-4: #4dabf7; /* Deep Cerulean Blue */
+  --card-bg-5: #495057; /* Dark Grey */
+  --card-bg-6: #343a40; /* Charcoal Black */
+  --card-bg-7: #212529; /* Deep Black */
+
+  --bg-start: #1e3c72; /* Dark Blue */
+  --bg-end: #2a5298;   /* Medium Blue */
+
+}
+
+.games-container {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+    height: 120%;
+  }
+  
+  h2 {
+    color: #ff5733;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(245, 242, 238);
+  }
+  .games-grid {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+ 
+  .game-card {
+    background-color: var(--card-bg-7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color); /* Yellow */
+  }
+  
+  
+  .game-icon {
+    font-size: 3rem;
+    color: #ff5733; /* Orange */
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  @media (min-width: 768px) {
+    .games-grid{
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+  }
+  

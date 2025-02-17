@@ -1,0 +1,141 @@
+.ttdis {
+    
+    background-color: #333;
+    height: 100vh;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #333; /* Slight transparency for better contrast */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Adds subtle blur effect to the background */
+}
+h2 {
+    color: #444;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.time-gap {
+    display: block;
+    background-color: #ffcc80;
+    color: #4a4a4a;
+    padding: 12px 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 250px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.time-gap:hover {
+    background-color: #ffb74d;
+}
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: white;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    width: 100%;
+}
+.dropdown-content.active {
+    opacity: 1;
+    visibility: visible;
+  }
+.dropdown-table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.dropdown-table th, .dropdown-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+}
+.dropdown-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #555;
+}
+.dropdown-table td {
+    background-color: #fafafa;
+    color: #333;
+    transition: background-color 0.3s;
+}
+.dropdown-table td:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.discovery {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.discovery:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.dialog-box {
+   
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px;
+    text-align: left;
+    z-index: 1000;
+}
+.dialog-box.active{
+    opacity: 1;
+    visibility: visible;
+}
+.close-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+}
+.close-btn:hover {
+    background-color: #ff1744;
+}
+.dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.dialog-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.overlay {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }

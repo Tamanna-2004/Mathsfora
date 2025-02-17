@@ -1,0 +1,132 @@
+.disputecont {
+    font-family: 'Poppins', sans-serif;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+.container {
+    max-width: 900px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #222;
+    font-size: 36px;
+    font-weight: bold;
+}
+.time-gap {
+    display: block;
+    background-color: #ffcc80;
+    color: #4a4a4a;
+    padding: 12px 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 250px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.time-gap:hover {
+    background-color: #ffb74d;
+}
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+}
+.dropdown-content.active{
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.dropdown-table th, .dropdown-table td {
+    border: 1px solid #666;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+}
+.dropdown-table th {
+    background-color: #4ca1af;
+    color: white;
+}
+.dropdown-table td {
+    background-color: #e3f2fd;
+    color: #333;
+    transition: background-color 0.3s;
+}
+.dropdown-table td:hover {
+    background-color: #bbdefb;
+    cursor: pointer;
+}
+/* Styling for the modal */
+.modal {
+    display: flex;  /* Default to flex, but hide using opacity */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;  
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+.dialog-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
